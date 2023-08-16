@@ -18,6 +18,10 @@ message RegisterRequest {
 message RegisterResponse {
   int32 status = 1;
   repeated string error = 2;
+  string data = 3;
+  //string expires_in = 4;
+  //string refresh_token = 5;
+  //string refresh_expires_in = 6;
 }
 
 // Login
@@ -30,7 +34,10 @@ message LoginRequest {
 message LoginResponse {
   int32 status = 1;
   repeated string error = 2;
-  string token = 3;
+  string data = 3;
+  //string expires_in = 4;
+  //string refresh_token = 5;
+  //string refresh_expires_in = 6;
 }
 
 // Validate
