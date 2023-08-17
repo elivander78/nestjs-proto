@@ -10,9 +10,9 @@ service AuthService {
 
 message authData {
   string access_token = 1;
-  int32 expires_in = 2;
+  string expires_in = 2;
   string refresh_token = 3;
-  int32 refresh_expires_in = 4;
+  string refresh_expires_in = 4;
 }
 
 
